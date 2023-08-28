@@ -11,3 +11,5 @@ RUN  go build -o main .
 FROM ubuntu
 
 COPY --from=builder /build/main /main
+
+CMD [ "/main" ]
